@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  
 <head>
   <title><%= title %></title>
   <%= stylesheet_link_tag   'application' %>
@@ -7,22 +8,23 @@
   <%= csrf_meta_tags %>
 
   <script type="text/javascript" src="http://use.typekit.com/zsp6cmy.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
 <body>
   <center>
-<ul class="navbar">
-<li><a href="/"></a></li>
-<li><a href="about">About</a></li>
-<li><a href ="contact">Contact</a></li>
-<li><a href="rates">Rates</a></li>
-<li><a href="services">Services</a></li>
-<li><a href="http://twitter.com/apricot_cs">Twitter</a>
-</ul>
-</center>    
+    <ul class="navbar">
+      <li><a href="/"></a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="contact">Contact</a></li>
+      <li><a href="rates">Rates</a></li>
+      <li><a href="services">Services</a></li>
+      <li><a href="http://twitter.com/apricot_cs">Twitter</a>
+    </ul>
+  </center>    
 
 <%= yield %>
 
 </body>
+
 </html>
